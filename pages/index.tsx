@@ -31,7 +31,7 @@ export default function Home() {
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
-                className={styles.vercelLogo}
+                className={styles['verce-logo']}
                 width={100}
                 height={24}
                 priority
