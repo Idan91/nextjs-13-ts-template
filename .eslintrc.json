@@ -35,6 +35,8 @@
             "always"
         ],
         "react/react-in-jsx-scope": 0,
+        "react/prop-types": 0,
+        "react/jsx-props-no-spreading": [2, { "custom": "ignore" }],
         "import/no-cycle": [0, { "ignoreExternal": true }],
         "@typescript-eslint/no-explicit-any": 2,
         "import/extensions": 0,
