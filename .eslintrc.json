@@ -66,6 +66,7 @@
     "react/jsx-filename-extension": [
       "error",
       { "extensions": [".jsx", ".ts", ".tsx"] }
-    ]
+    ],
+    "@typescript-eslint/no-var-requires": "off"
   }
 }
