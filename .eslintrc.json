@@ -22,16 +22,16 @@
       "jsx": true
     }
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier", "i18next"],
   "rules": {
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "react/jsx-props-no-spreading": ["error", { "custom": "ignore" }],
+    "react/jsx-props-no-spreading": ["off"],
     "import/no-cycle": ["off", { "ignoreExternal": true }],
-    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-explicit-any": "off",
     "import/extensions": "off",
     "import/order": [
       "error",
@@ -48,7 +48,7 @@
         ]
       }
     ],
-    //   "i18next/no-literal-string": ["error", { "markupOnly": true }],
+    "i18next/no-literal-string": ["error", { "markupOnly": true }],
     "no-multiple-empty-lines": [
       "error",
       { "max": 2, "maxBOF": 0, "maxEOF": 1 }
@@ -67,6 +67,10 @@
       "error",
       { "extensions": [".jsx", ".ts", ".tsx"] }
     ],
-    "@typescript-eslint/no-var-requires": "off"
+    "@typescript-eslint/no-var-requires": "off",
+    "react/require-default-props": "off",
+    "@next/next/no-html-link-for-pages": ["error", "app"],
+    "no-param-reassign": "error",
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 }
