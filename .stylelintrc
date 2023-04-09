@@ -1,8 +1,9 @@
 {
     "extends": [
-        "stylelint-config-standard",
         "stylelint-config-prettier",
-        "stylelint-config-prettier-scss"
+        "stylelint-config-sass-guidelines",
+        "stylelint-config-prettier-scss",
+        "stylelint-config-standard-scss"
     ],
     "plugins": ["@namics/stylelint-bem", "stylelint-scss", "stylelint-order"],
     "rules": {
@@ -14,6 +15,16 @@
         "selector-class-pattern": null,
         "string-quotes": "single",
         "order/properties-alphabetical-order": true,
-        "property-no-vendor-prefix": null
+        "property-no-vendor-prefix": null,
+        "declaration-block-no-redundant-longhand-properties": [
+            true,
+            { "ignoreShorthands": ["/flex/"] }
+        ],
+        "scss/operator-no-unspaced": true,
+        "selector-pseudo-class-no-unknown": [
+            true,
+            { "ignorePseudoClasses": ["/export/"] }
+        ],
+        "property-no-unknown": true
     }
 }
